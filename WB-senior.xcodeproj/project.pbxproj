@@ -13,6 +13,12 @@
 		1BF382142C3168690012A40C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382132C3168690012A40C /* Preview Assets.xcassets */; };
 		1BF3821B2C316A920012A40C /* EnterCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */; };
 		1BF3821D2C3170290012A40C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3821C2C3170290012A40C /* BackgroundView.swift */; };
+		1BF3821F2C3172110012A40C /* MediumSatisfactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3821E2C3172110012A40C /* MediumSatisfactionView.swift */; };
+		1BF382212C3177560012A40C /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382202C3177560012A40C /* Montserrat-Black.ttf */; };
+		1BF382262C3185B50012A40C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382252C3185B50012A40C /* Montserrat-Regular.ttf */; };
+		1BF382292C3188E30012A40C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF382282C3188E30012A40C /* CustomButton.swift */; };
+		1BF3822B2C3189E30012A40C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF3822A2C3189E30012A40C /* Montserrat-Medium.ttf */; };
+		1BF3822D2C318D6B0012A40C /* OTPTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3822C2C318D6B0012A40C /* OTPTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,13 @@
 		1BF382132C3168690012A40C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeScreen.swift; sourceTree = "<group>"; };
 		1BF3821C2C3170290012A40C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		1BF3821E2C3172110012A40C /* MediumSatisfactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumSatisfactionView.swift; sourceTree = "<group>"; };
+		1BF382202C3177560012A40C /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		1BF382222C31778F0012A40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1BF382252C3185B50012A40C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1BF382282C3188E30012A40C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1BF3822A2C3189E30012A40C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1BF3822C2C318D6B0012A40C /* OTPTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +68,16 @@
 		1BF3820B2C3168680012A40C /* WB-senior */ = {
 			isa = PBXGroup;
 			children = (
+				1BF382272C3185C10012A40C /* Fonts */,
+				1BF382222C31778F0012A40C /* Info.plist */,
 				1BF3820C2C3168680012A40C /* WB_seniorApp.swift */,
 				1BF3820E2C3168680012A40C /* ContentView.swift */,
 				1BF382102C3168690012A40C /* Assets.xcassets */,
 				1BF382122C3168690012A40C /* Preview Content */,
 				1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */,
+				1BF3822C2C318D6B0012A40C /* OTPTextFieldModifier.swift */,
+				1BF382282C3188E30012A40C /* CustomButton.swift */,
+				1BF3821E2C3172110012A40C /* MediumSatisfactionView.swift */,
 				1BF3821C2C3170290012A40C /* BackgroundView.swift */,
 			);
 			path = "WB-senior";
@@ -71,6 +89,16 @@
 				1BF382132C3168690012A40C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BF382272C3185C10012A40C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1BF3822A2C3189E30012A40C /* Montserrat-Medium.ttf */,
+				1BF382252C3185B50012A40C /* Montserrat-Regular.ttf */,
+				1BF382202C3177560012A40C /* Montserrat-Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +159,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF382262C3185B50012A40C /* Montserrat-Regular.ttf in Resources */,
+				1BF3822B2C3189E30012A40C /* Montserrat-Medium.ttf in Resources */,
 				1BF382142C3168690012A40C /* Preview Assets.xcassets in Resources */,
 				1BF382112C3168690012A40C /* Assets.xcassets in Resources */,
+				1BF382212C3177560012A40C /* Montserrat-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +176,11 @@
 			files = (
 				1BF3820F2C3168680012A40C /* ContentView.swift in Sources */,
 				1BF3820D2C3168680012A40C /* WB_seniorApp.swift in Sources */,
+				1BF382292C3188E30012A40C /* CustomButton.swift in Sources */,
 				1BF3821D2C3170290012A40C /* BackgroundView.swift in Sources */,
 				1BF3821B2C316A920012A40C /* EnterCodeScreen.swift in Sources */,
+				1BF3822D2C318D6B0012A40C /* OTPTextFieldModifier.swift in Sources */,
+				1BF3821F2C3172110012A40C /* MediumSatisfactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WB-senior/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WB-senior/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WB-senior/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WB-senior/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

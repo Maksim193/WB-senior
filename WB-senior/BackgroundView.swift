@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BackgroundView: View {
     var body: some View {
-        Image("backgroundDalle", bundle: nil)
+        Image("backgroundDalle")
             .resizable()
             .edgesIgnoringSafeArea(.all)
             .blur(radius: 80, opaque: true)
