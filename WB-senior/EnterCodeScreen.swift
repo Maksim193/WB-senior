@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EnterCodeScreen.swift
 //  WB-senior
 //
 //  Created by Максим Косников on 30.06.2024.
@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EnterCodeScreen: View {
     var body: some View {
-        EnterCodeScreen()
+        ZStack {
+            BackgroundView()
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    EnterCodeScreen()
 }

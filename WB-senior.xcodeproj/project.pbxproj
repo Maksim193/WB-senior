@@ -11,6 +11,8 @@
 		1BF3820F2C3168680012A40C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3820E2C3168680012A40C /* ContentView.swift */; };
 		1BF382112C3168690012A40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382102C3168690012A40C /* Assets.xcassets */; };
 		1BF382142C3168690012A40C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382132C3168690012A40C /* Preview Assets.xcassets */; };
+		1BF3821B2C316A920012A40C /* EnterCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */; };
+		1BF3821D2C3170290012A40C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3821C2C3170290012A40C /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1BF3820E2C3168680012A40C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BF382102C3168690012A40C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF382132C3168690012A40C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeScreen.swift; sourceTree = "<group>"; };
+		1BF3821C2C3170290012A40C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				1BF3820E2C3168680012A40C /* ContentView.swift */,
 				1BF382102C3168690012A40C /* Assets.xcassets */,
 				1BF382122C3168690012A40C /* Preview Content */,
+				1BF3821A2C316A920012A40C /* EnterCodeScreen.swift */,
+				1BF3821C2C3170290012A40C /* BackgroundView.swift */,
 			);
 			path = "WB-senior";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				1BF3820F2C3168680012A40C /* ContentView.swift in Sources */,
 				1BF3820D2C3168680012A40C /* WB_seniorApp.swift in Sources */,
+				1BF3821D2C3170290012A40C /* BackgroundView.swift in Sources */,
+				1BF3821B2C316A920012A40C /* EnterCodeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
