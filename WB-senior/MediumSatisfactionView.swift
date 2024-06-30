@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct MediumSatisfactionView<Content>: View where Content: View {
-    
-    private let content: () -> Content
-    
-    init(@ViewBuilder content: @escaping () -> Content) {
-        self.content = content
-    }
-    
-    var body: some View {
-        ZStack {
-            LinearGradient(
-                colors: [Color.mediumSatisfactionColor1, Color.mediumSatisfactionColor2],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            self.content()
-        }
-        
-        .clipShape(.rect(cornerRadius: 28))
-    }
-
+	
+	private let content: () -> Content
+	
+	init(@ViewBuilder content: @escaping () -> Content) {
+		self.content = content
+	}
+	
+	var body: some View {
+		ZStack {
+			LinearGradient(
+				colors: [Color.mediumSatisfactionColor1, Color.mediumSatisfactionColor2],
+				startPoint: .topLeading,
+				endPoint: .bottomTrailing
+			)
+			self.content()
+		}
+		
+		.clipShape(.rect(cornerRadius: 28))
+	}
+	
 }

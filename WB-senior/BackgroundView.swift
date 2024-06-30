@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct BackgroundView: View {
-    var body: some View {
-        Image("backgroundDalle")
-            .resizable()
-            .edgesIgnoringSafeArea(.all)
-            .blur(radius: 80, opaque: true)
-    }
+	var body: some View {
+		Image("backgroundDalle")
+			.resizable()
+			.edgesIgnoringSafeArea(.all)
+			.blur(radius: 80, opaque: true)
+	}
 }
 
 #Preview {
-    BackgroundView()
+	BackgroundView()
 }
