@@ -17,6 +17,7 @@ enum FocusOTPTextField {
 struct OTPTextFieldModifer: ViewModifier {
 	
 	@Binding var text : String
+	@Binding var textFieldState: OTPTextFieldState
 	
 	var textLimt = 1
 	
@@ -25,7 +26,7 @@ struct OTPTextFieldModifer: ViewModifier {
 			.frame(width: 64, height: 80)
 			.background(.white.opacity(0.08))
 			.clipShape(.rect(cornerRadius: 12))
-			.font(Font.custom("Montserrat-Black", size: 36))
+			.font(Fonts.titleHeader1)
 			.foregroundStyle(.white)
 			.tint(.clear)
 			.multilineTextAlignment(.center)
@@ -35,5 +36,24 @@ struct OTPTextFieldModifer: ViewModifier {
 					self.text = String(value.prefix(textLimt))
 				}
 			})
+			.overlay(
+				RoundedRectangle(cornerRadius: 14)
+					.stroke(self.getBorderColor(), lineWidth: 2)
+			)
 	}
+	
+	private func getBorderColor() -> Color {
+		switch textFieldState {
+		case .clear:
+			return .clear
+		case .incorrect:
+			return .opacityRed
+		case .correct:
+			return .opacityGreen
+		}
+	}
+}
+
+#Preview {
+	ContentView()
 }

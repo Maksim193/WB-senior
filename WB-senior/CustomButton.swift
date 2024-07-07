@@ -12,6 +12,8 @@ struct CustomButton<Content>: View where Content: View {
 	private let action: () -> Void
 	private let content: () -> Content
 	
+	@State private var tapped = false
+	
 	init(
 		action: @escaping () -> Void,
 		content: @escaping () -> Content
@@ -23,11 +25,18 @@ struct CustomButton<Content>: View where Content: View {
 	var body: some View {
 		self.content()
 			.frame(maxWidth: .infinity, maxHeight: 48)
-			.background(Color("Purple"))
+			.background(Color.wbpurple)
 			.clipShape(.rect(cornerRadius: 12))
 			.padding([.leading, .trailing], 24)
-			.font(Font.custom("Montserrat-Medium", size: 16))
+			.font(Fonts.bodyMedium)
 			.foregroundStyle(.white)
+			.onTapGesture {
+				self.action()
+			}
+			.onLongPressGesture(minimumDuration: 100, pressing: { isPress in
+				self.tapped = isPress
+			}, perform: {})
+			.opacity(self.tapped ? 0.3 : 1)
 	}
 }
 
