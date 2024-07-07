@@ -27,10 +27,13 @@ struct OTPTextFieldModifer: ViewModifier {
 			.clipShape(.rect(cornerRadius: 12))
 			.font(Font.custom("Montserrat-Black", size: 36))
 			.foregroundStyle(.white)
+			.tint(.clear)
 			.multilineTextAlignment(.center)
 			.keyboardType(.numberPad)
 			.onChange(of: text, perform: { value in
-				self.text = String(text.prefix(textLimt))
+				if value.count > textLimt {
+					self.text = String(value.prefix(textLimt))
+				}
 			})
 	}
 }

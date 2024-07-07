@@ -57,16 +57,20 @@ struct EnterCodeScreen: View {
 			TextField("", text: $firstDigit)
 				.modifier(OTPTextFieldModifer(text:$firstDigit))
 				.onChange(of:firstDigit) { value in
-					if (value.count == 1) {
+					if (value.count == 2) {
 						oTPTextFieldFocusState = .second
+						guard let nextDigit = value.last else { return }
+						secondDigit = String(nextDigit)
 					}
 				}
 				.focused($oTPTextFieldFocusState, equals: .first)
 			TextField("", text:  $secondDigit)
 				.modifier(OTPTextFieldModifer(text:$secondDigit))
 				.onChange(of:secondDigit) { value in
-					if (value.count == 1) {
+					if (value.count == 2) {
 						oTPTextFieldFocusState = .third
+						guard let nextDigit = value.last else { return }
+						thirdDigit = String(nextDigit)
 					}else {
 						if (value.count == 0) {
 							oTPTextFieldFocusState = .first
@@ -77,8 +81,10 @@ struct EnterCodeScreen: View {
 			TextField("", text:$thirdDigit)
 				.modifier(OTPTextFieldModifer(text:$thirdDigit))
 				.onChange(of:thirdDigit) { value in
-					if (value.count == 1) {
+					if (value.count == 2) {
 						oTPTextFieldFocusState = .fourth
+						guard let nextDigit = value.last else { return }
+						fourthDigit = String(nextDigit)
 					}else {
 						if (value.count == 0) {
 							oTPTextFieldFocusState = .second
