@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B368FC72C3AF07600597DF6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B368FC62C3AF07600597DF6 /* Fonts.swift */; };
 		1BF3820D2C3168680012A40C /* WB_seniorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3820C2C3168680012A40C /* WB_seniorApp.swift */; };
 		1BF3820F2C3168680012A40C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3820E2C3168680012A40C /* ContentView.swift */; };
 		1BF382112C3168690012A40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF382102C3168690012A40C /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B368FC62C3AF07600597DF6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		1BF382092C3168680012A40C /* WB-senior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WB-senior.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF3820C2C3168680012A40C /* WB_seniorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_seniorApp.swift; sourceTree = "<group>"; };
 		1BF3820E2C3168680012A40C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		1BF382272C3185C10012A40C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1B368FC62C3AF07600597DF6 /* Fonts.swift */,
 				1BF3822A2C3189E30012A40C /* Montserrat-Medium.ttf */,
 				1BF382252C3185B50012A40C /* Montserrat-Regular.ttf */,
 				1BF382202C3177560012A40C /* Montserrat-Black.ttf */,
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B368FC72C3AF07600597DF6 /* Fonts.swift in Sources */,
 				1BF3820F2C3168680012A40C /* ContentView.swift in Sources */,
 				1BF3820D2C3168680012A40C /* WB_seniorApp.swift in Sources */,
 				1BF382292C3188E30012A40C /* CustomButton.swift in Sources */,
